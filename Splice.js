@@ -20,7 +20,7 @@
 // ITEMS
 // item1, item2 == items to be added or replace
 
-// REMOVAL OF ITEMS
+//*************************************  REMOVAL OF ITEMS ************************************************ */
 // Case 1:
 const months = ['Jan', 'March', 'April', 'June'];
 const removedElements = months.splice(1, 2); // From index 1 remove 2 elements
@@ -45,13 +45,13 @@ let removed = myFish.splice(-2, 1); // From index -2 remove 1 element
 console.log(myFish); // myFish is ["angel", "clown", "sturgeon"]
 console.log(removed); // removed is ["mandarin"]
 
-// REPLACING ITEMS
+//************************************* REPLACING ITEMS ************************************************ */
 let myFish1 = ['angel', 'clown', 'trumpet', 'sturgeon']
 let removed1 = myFish.splice(0, 2, 'parrot', 'anemone', 'blue') // From index 0, remove 2 elements and replace with items
 console.log(myFish1);  // myFish1 is ["parrot", "anemone", "blue", "trumpet", "sturgeon"]
 console.log(removed1); // removed1 is ["angel", "clown"]
 
-// ADDING ITEMS
+//************************************** ADDING ITEMS ************************************************ */
 // Provide 2nd argument as 0 for insertion
 let myFish2 = ['angel', 'clown', 'mandarin', 'sturgeon']
 let removed2 = myFish2.splice(2, 0, 'drum', 'guitar')

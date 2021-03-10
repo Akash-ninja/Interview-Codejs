@@ -17,13 +17,13 @@ console.log(animals.slice(0,3)); // ['ant', 'bison', 'camel']
 console.log(animals.slice(5));    // [] (if index >= array-length)
 console.log(animals.slice(0, 0)); // []
 
-// If NO endIndex then extraction done to the end
+// If NO endIndex then extraction done to the end ************************************************ */
 console.log(animals.slice(3));    // ['duck', 'elephant']
 
-// Extracts last 3 elements
+//************************************************ Extracts last 3 elements ************************************************ */
 console.log(animals.slice(-3));  // ["camel", "duck", "elephant"]
 
-// endIndex < 0, end-index starts from end with last element as index -1
+// endIndex < 0, end-index starts from end with last element as index -1 ************************************************ */
 console.log(animals.slice(0, -1));  // ['ant', 'bison', 'camel', 'duck']
 
 console.log(animals.slice(-3, -1)); // ['camel', 'duck']
