@@ -1,6 +1,6 @@
 // Every function in JS has this keyword
 
-let name = {
+let name1 = {
     firstName: "Akash",
     lastName: "Keshari",
 
@@ -19,7 +19,7 @@ let name2 = {
 }
 
 // Function borrowing
-name.printFullName.call(name);
+name1.printFullName.call(name1);
 
 printFullName_V2.call(name2, "Mumbai", "Maharastra");
 
