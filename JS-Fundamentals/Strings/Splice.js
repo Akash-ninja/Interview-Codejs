@@ -3,7 +3,7 @@
 // changes the contents of Original array (by removing, replacing and adding elements)
 // Arguments - Array.slice(startIndex, count, item1, item2, ........)
     // startIndex(=optional) - Number to indicate start point of extraction (follows array based index)
-    // count(=optional) - Number of elements to be deleted (usually extracts-> Number-1)
+    // count(=optional) - Number of elements to be deleted
 
 // Returns - An array (of deleted or empty elements)
 // Note: 1. Mutates the Original array
@@ -30,8 +30,8 @@ console.log(removedElements); // ["March", "April"]
 // Case 2:
 const months1 = ['Jan', 'March', 'April', 'June'];
 const removedElements1 = months1.splice(1); // From index 1 remove all elements
-console.log(months1); // ["Jan", "June"]
-console.log(removedElements1); // ["March", "April"]
+console.log(months1); // ["Jan"]
+console.log(removedElements1); // ["March", "April", "June"]
 
 // Case 3:
 const months2 = ['Jan', 'March', 'April', 'June'];
@@ -47,7 +47,7 @@ console.log(removed); // removed is ["mandarin"]
 
 //************************************* REPLACING ITEMS ************************************************ */
 let myFish1 = ['angel', 'clown', 'trumpet', 'sturgeon']
-let removed1 = myFish.splice(0, 2, 'parrot', 'anemone', 'blue') // From index 0, remove 2 elements and replace with items
+let removed1 = myFish1.splice(0, 2, 'parrot', 'anemone', 'blue') // From index 0, remove 2 elements and replace with items
 console.log(myFish1);  // myFish1 is ["parrot", "anemone", "blue", "trumpet", "sturgeon"]
 console.log(removed1); // removed1 is ["angel", "clown"]
 

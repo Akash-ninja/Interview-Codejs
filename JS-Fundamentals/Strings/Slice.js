@@ -1,4 +1,4 @@
-// About Array.slice() and String.slice() - Same as array slice
+// About Array.slice() and String.slice() - both are same
 
 // Used for slicing/extracting a piece of array
 // Arguments - Array.slice(startIndex, endIndex)
