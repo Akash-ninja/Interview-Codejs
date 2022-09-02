@@ -26,7 +26,7 @@ let x: [string, number];
 // Initialize it
 x = ["hello", 10]; // OK
 // Initialize it incorrectly
-x = [10, "hello"]; // Error
+// x = [10, "hello"]; // Error
 
 // ENUM
 enum Color {Red = 1, Green, Blue}
@@ -67,4 +67,4 @@ declare function create(o: object | null): void;
 create({ prop: 0 }); // OK
 create(null); // OK
 
-create(42); // Error
+// create(42); // Error
