@@ -1,0 +1,48 @@
+covers ->
+    1. new
+    2. prototypes
+    3. constructor
+    4. constructor functions
+    5. Object.getPrototypeOf
+    6. Object.setPrototypeOf
+    7. prototypal inheritance
+    8. __proto__ vs prototype
+
+-> JavaScript does not always have classes in earlier days 
+    but that doesn't mean it was unable to implement OOP principles.
+
+-> class and its related keywords are all syntactic sugar on top of the existing OOP infra
+    like prototypes and new keyword
+
+About 'new' -->
+    
+    The new keyword does four things
+        1. Creates an empty object
+        2. Sets the keyword 'this' to be that object
+        3. Returns the object - return this
+        4. ** Creates a link to the object's prototype **
+
+About 'prototype' --> 
+
+   -> Every single JS object has a special built in property, which is called its "prototype"
+    and that prototype is itself an object which can have its own prototype
+    making what we call the "prototype chain"
+
+   -> any object's prototype can be looked up by __proto__
+
+About 'functions/objects' in JS -->
+
+    -> Every function has a property on it called 'prototype' [[prototype]]
+    -> The prototype object has a property called constructor which points back to the function(refer part 3) 
+    -> When the new keyword is used to invoke a function, 
+        a link between the object created from new 
+        and the prototype object is established
+
+__proto__ vs prototype
+
+    -> __proto__ is an internal property of every object pointing to its prototype object
+    -> __proto__ internal to JavaScript engine
+    -> prototype - this property exists on functions. It's unique to functions,
+        and it will point to the object that will be assigned, as the prototype of
+        instances created from that particular object(Dog) using new keyword
+

@@ -19,3 +19,5 @@ const debounce = (func, delay) => {
 };
 
 const invokeDebounce = debounce(getData, 500);
+
+// invokeDebounce() - this will be called

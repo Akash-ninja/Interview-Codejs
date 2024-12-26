@@ -1,0 +1,46 @@
+
+In a sense, JavaScript doesn't have functions (truly)
+
+1. <b>Everything is called on something (some object)<b> --> like a method
+
+Global Object -->
+2. When you call a function on nothing  --->  you call it on the "global object"
+
+    In browser, thats typically window (the browser window)
+    In Node, thats global
+
+3. this depends on the method that is called upon
+
+4. "Left of the Dot" rule 
+    -> it says the value of 'this' depends on the left object of the dot on which it is called upon
+    
+5. OOP and this
+    -> When you call a function on nothing, but the function comes from inside a class,
+        the value of this will be undefined, not the window.
+    
+    -> In either case (in class or normal functions), the this is referred to as "losing the this context".
+
+    -> Now, there are ways to force the value of 'this' to be whatever we want.
+
+6. and that can be done via call, apply and bind methods
+    -> Most use cases are with bind
+    -> because bind() permanently binds a function with 'this' value for further calling the function
+
+7. Use cases of bind ->
+    Binding arguments to functions
+    bind() is a method on functions that returns a bound copy of the function
+
+8. When you do not directly call functions and JS calls them, a keyword this is created for you
+    -> Event Listeners
+    -> Timers
+    -> Callbacks (map, filter, etc.)
+
+9. Arrow functions
+    -> Arrow functions don't make their own this
+
+10. Some concluding points
+    -> this is a reserved keyword whose value is determined
+       "only at the point of function execution"
+    
+    -> if you don't call a function yourself (eg, it's called by a callback)
+        need to ensure JS knows what the 'this' context should be

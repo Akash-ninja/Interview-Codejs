@@ -6,7 +6,7 @@
 //1. Object Constructor
 let obj = new Object()
 obj.foo = 42
-console.log(o)          // Object { foo: 42 }
+console.log(obj)          // Object { foo: 42 }
 
 let obj = new Object(null) // To create empty object
 

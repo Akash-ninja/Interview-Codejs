@@ -1,4 +1,4 @@
-let name = {
+let fullName = {
     firstName: "Akash",
     lastName: "Keshari",
 }
@@ -7,7 +7,7 @@ let printName = function(hometown, state, country) {
     console.log(this.firstName+ " " +this.lastName+ ", " +hometown+ ", " +state+ ", " +country)
 }
 
-let info = printName.bind(name, "Jagatdal", "WB", "India")
+let info = printName.bind(fullName, "Jagatdal", "WB", "India")
 info()
 
 Function.prototype.myBind = function(...args) {
@@ -18,7 +18,7 @@ Function.prototype.myBind = function(...args) {
     }
 }
 
-let info_v2 = printName.myBind(name, "Jagatdal", "West Bengal")
+let info_v2 = printName.myBind(fullName, "Jagatdal", "West Bengal")
 info_v2("India")
 
 /*
